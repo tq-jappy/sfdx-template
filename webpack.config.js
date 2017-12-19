@@ -1,7 +1,18 @@
+const path = require('path');
+
 module.exports = {
-  entry: "./src/main.js",
+  entry: './src/main.js',
   output: {
-    filename: "build/bundle.js"
+    filename: 'bundle.js',
+    path: path.join(__dirname, 'build'),
+    publicPath: '/assets'
+  },
+  devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
+    publicPath: '/assets/',
+    port: 8081,
+    watchContentBase: true
   },
   module: {
     rules: [
@@ -19,6 +30,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  devtool: 'source-map'
+  }
 }

@@ -6,5 +6,11 @@ const webpackConfig = require('./webpack.config');
 
 gulp.task('build', () =>
   webpackStream(webpackConfig, webpack)
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('build/assets'))
 )
+
+/*
+gulp.task('watch', () => {
+  gulp.watch( ['src/*.js'] , ['build'] );
+})
+*/
