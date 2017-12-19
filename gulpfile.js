@@ -8,3 +8,7 @@ gulp.task('build', () =>
   webpackStream(webpackConfig, webpack)
     .pipe(gulp.dest('dist'))
 )
+
+gulp.task('watch', () => {
+  gulp.watch( ['src/*.js'] , ['build'] );
+})
