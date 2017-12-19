@@ -1,0 +1,22 @@
+{
+  "name": "sfdx-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tq-jappy/sfdx-template.git"
+  },
+  "keywords": [
+    "sfdx"
+  ],
+  "author": "Takumi Endo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tq-jappy/sfdx-template/issues"
+  },
+  "homepage": "https://github.com/tq-jappy/sfdx-template#readme"
+}
