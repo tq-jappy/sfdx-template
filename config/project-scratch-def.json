@@ -1,7 +1,7 @@
 {
-    "orgName": "t_endo Company",
+    "orgName": "XYZ Company",
     "edition": "Developer",
     "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
+        "enabled": ["Translation"]
     }
 }
