@@ -7,11 +7,27 @@
 - Mocha
 - [Lightning Testing Service (LTS)](https://github.com/forcedotcom/LightningTestingService)
 
-## Dev, Build and Test
+## Dev
 
 ```
 $ npm run start
 ```
+
+## Deploy
+
+```
+$ npm run package
+```
+
+## Test
+
+## Test using scratch org
+
+```
+$ sfdx force:org:create -f config/project-scratch-def.json -a MyScratchOrg
+$ sfdx force:org:open -u MyScratchOrg
+```
+
 
 ## Resources
 
@@ -20,5 +36,3 @@ $ npm run start
 
 
 ## Issues
-
-
