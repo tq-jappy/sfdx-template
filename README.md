@@ -13,19 +13,16 @@
 $ npm run start
 ```
 
-## Deploy
-
-```
-$ npm run package
-```
-
 ## Test
 
-## Test using scratch org
+## Deploy to Scratch Org
 
 ```
 $ sfdx force:org:create -f config/project-scratch-def.json -a MyScratchOrg
 $ sfdx force:org:open -u MyScratchOrg
+$ npm run package
+# TODO: generate {basename}.resource-meta.xml
+$ sfdx force:source:push -u MyScratchOrg
 ```
 
 
