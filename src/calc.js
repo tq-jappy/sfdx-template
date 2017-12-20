@@ -1,0 +1,1 @@
+module.exports.calc = (a, b) => a + b;
