@@ -2,6 +2,8 @@
 
 - sfdx
 - webpack 3
+- React
+- Lightning Design System
 - Mocha
 - [Lightning Testing Service (LTS)](https://github.com/forcedotcom/LightningTestingService)
 
