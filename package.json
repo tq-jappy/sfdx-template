@@ -7,6 +7,7 @@
     "node": ">= 8.0.0"
   },
   "scripts": {
+    "postinstall": "bash postinstall.sh",
     "build": "npx webpack",
     "package": "npx gulp staticresource",
     "start": "npx webpack-dev-server",
@@ -27,16 +28,21 @@
   },
   "homepage": "https://github.com/tq-jappy/sfdx-template#readme",
   "devDependencies": {
+    "@salesforce-ux/design-system": "2.5.0-alpha.11",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
     "gulp": "3.9.1",
     "gulp-zip": "4.0.0",
+    "style-loader": "0.19.1",
     "webpack": "3.10.0",
     "webpack-dev-server": "2.9.7",
     "webpack-stream": "4.0.0"
   },
   "dependencies": {
-    "design-system-react": "git+https://github.com/salesforce/design-system-react.git#v0.8.0-es"
+    "design-system-react": "git+https://github.com/salesforce/design-system-react.git#v0.8.0-es",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   }
 }
