@@ -1,11 +1,10 @@
-# sfdx-template (WIP)
+# Modern Salesforce Development Template and Samples
 
-- sfdx
-- webpack 3
+- Salesforce CLI/sfdx
+- webpack v3, including webpack dev server for live reloading
 - React
 - Lightning Design System
-- Mocha
-- [Lightning Testing Service (LTS)](https://github.com/forcedotcom/LightningTestingService)
+- [Lightning Testing Service (LTS)](https://github.com/forcedotcom/LightningTestingService) with Jasmine
 
 ## Requirements
 
