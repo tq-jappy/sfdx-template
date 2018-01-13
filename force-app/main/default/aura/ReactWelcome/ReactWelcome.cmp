@@ -2,5 +2,8 @@
     <ltng:require scripts="{!$Resource.SampleResource + '/react-welcome.js'}"
                   afterScriptsLoaded="{!c.scriptsLoaded}" />
 
+    <aura:attribute name="app" type="Object" />
+    <aura:attribute name="var1" type="String" default="xyz" />
+
     <div id="root"></div>
 </aura:component>

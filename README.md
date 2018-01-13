@@ -35,7 +35,12 @@ $ open build/index.html // or open your browser and access to file://<current pa
 
 ## Test
 
-TBD
+Test for Lightning Components
+
+```
+$ sfdx force:lightning:test:install -u MyScratchOrg
+$ sfdx force:lightning:test:run -u MyScratchOrg -a jasmineSamplesTests
+```
 
 ## Deploy to Scratch Org
 
