@@ -33,6 +33,9 @@ $ npm run package
 $ sfdx force:source:push -u MyScratchOrg
 ```
 
+Open:
+https://{you scratch domain}.lightning.force.com/c/app.app
+
 ## Resources
 
 
