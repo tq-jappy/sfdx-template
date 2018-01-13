@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'build'),
-    library: ['DemoApp'],
+    library: ['MyApp'],
     libraryTarget: 'umd'
   },
   devtool: 'source-map',

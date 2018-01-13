@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 
 module.exports = {
-  render: () => {
+  render: (element) => {
     console.log('render app');
-    ReactDOM.render(<App />, document.getElementById('root'));
+    ReactDOM.render(<App />, element);
   }
 }

@@ -12,5 +12,5 @@ gulp.task('build', () =>
 
 gulp.task('staticresource', ['build'], () => {
   gulp.src(['build/**/*.js', 'build/**/*.js.map'])
-    .pipe(gulp.dest('./force-app/main/default/staticresources/DemoApp'))
+    .pipe(gulp.dest('./force-app/main/default/staticresources/MyApp'))
 });
