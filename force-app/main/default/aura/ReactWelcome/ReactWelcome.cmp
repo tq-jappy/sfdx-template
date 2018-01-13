@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <ltng:require scripts="{!$Resource.SampleResource + '/react-welcome.js'}"
+                  afterScriptsLoaded="{!c.scriptsLoaded}" />
+
+    <div id="root"></div>
+</aura:component>

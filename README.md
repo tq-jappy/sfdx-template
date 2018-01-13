@@ -9,8 +9,17 @@
 
 ## Dev
 
+Local w/ Hot Reload
+
 ```
 $ npm run start
+```
+
+Local
+
+```
+$ npm run build
+$ open build/index.html // or open your browser and access file://<current path>/build/index.html
 ```
 
 ## Test

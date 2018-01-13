@@ -1,17 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const config = require('./config/config');
+
 const basePath = __dirname;
 
 module.exports = {
-  context: path.join(basePath, 'my-app'),
-  entry: {
-    main: './main.js',
-  },
+  context: path.join(basePath, 'src'),
+  entry: config.source.entry,
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'build'),
-    library: ['MyApp'],
+    library: [config.source.libraryPrefix, '[name]'],
     libraryTarget: 'umd'
   },
   devtool: 'source-map',
@@ -53,7 +53,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: '../public/index.html',
-      inject: false,
+      inject: 'head', // false,
       hash: true
     })
   ]

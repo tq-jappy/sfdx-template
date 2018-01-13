@@ -5,6 +5,8 @@ const webpack = require('webpack');
 
 const webpackConfig = require('./webpack.config');
 
+const config = require('./config/config');
+
 gulp.task('build', () =>
   webpackStream(webpackConfig, webpack)
     .pipe(gulp.dest('build'))
@@ -12,5 +14,5 @@ gulp.task('build', () =>
 
 gulp.task('staticresource', ['build'], () => {
   gulp.src(['build/**/*.js', 'build/**/*.js.map'])
-    .pipe(gulp.dest('./force-app/main/default/staticresources/MyApp'))
+    .pipe(gulp.dest('./force-app/main/default/staticresources/' + config.staticResourceName))
 });
