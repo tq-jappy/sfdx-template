@@ -1,0 +1,5 @@
+({
+  aaa: function (component) {
+
+  }
+})
