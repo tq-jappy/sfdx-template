@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const zip = require('gulp-zip');
 const webpackStream = require('webpack-stream');
 const webpack = require('webpack');
 
