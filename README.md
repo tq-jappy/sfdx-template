@@ -32,21 +32,18 @@ $ npm run build
 $ open build/index.html // or open your browser and access to file://<current path>/build/index.html
 ```
 
-## Test
-
-Test for Lightning Components
-
-```
-$ sfdx force:lightning:test:install -u MyScratchOrg
-$ sfdx force:lightning:test:run -u MyScratchOrg -a jasmineSamplesTests
-```
-
 ## Deploy to Scratch Org
 
 Create and connect scratch org if not created.
 
 ```
 $ sfdx force:org:create -f config/project-scratch-def.json -a MyScratchOrg
+```
+
+(Workaround): To test using LTS, install LTS
+
+```
+$ sfdx force:lightning:test:install -u MyScratchOrg
 ```
 
 Package applications and push to the scratch org.
@@ -56,11 +53,19 @@ $ npm run package
 $ sfdx force:source:push -u MyScratchOrg
 ```
 
-Access application.
+Open the application.
 
 ```
 $ sfdx force:org:open -u MyScratchOrg
-https://{you scratch domain}.lightning.force.com/c/app.app
+https://xxxxx.lightning.force.com/c/app.app
+```
+
+## Test
+
+Test for Lightning Components
+
+```
+$ npm run test:lightning -- -u MyScratchOrg
 ```
 
 ## Description of Files and Directories

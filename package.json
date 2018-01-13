@@ -11,6 +11,9 @@
     "package": "npx gulp staticresource",
     "start": "npx webpack-dev-server",
     "watch": "npx gulp watch",
+    "test:js": "echo \"Error: no test specified\" && exit 1",
+    "test:apex": "echo \"Error: no test specified\" && exit 1",
+    "test:lightning": "sfdx force:lightning:test:run -a jasmineSamplesTests",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
