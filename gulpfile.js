@@ -7,17 +7,10 @@ const webpackConfig = require('./webpack.config');
 
 gulp.task('build', () =>
   webpackStream(webpackConfig, webpack)
-    .pipe(gulp.dest('build/assets'))
+    .pipe(gulp.dest('build'))
 )
 
-gulp.task('staticresource', [ 'build' ], () => {
-  gulp.src('./build/assets/**', { base:  'build/assets' })
-    .pipe(zip('pkg.resource'))
-    .pipe(gulp.dest('./force-app/main/default/staticresources'))
+gulp.task('staticresource', ['build'], () => {
+  gulp.src(['build/**/*.js', 'build/**/*.js.map'])
+    .pipe(gulp.dest('./force-app/main/default/staticresources/DemoApp'))
 });
-
-/*
-gulp.task('watch', () => {
-  gulp.watch( ['src/*.js'] , ['build'] );
-})
-*/

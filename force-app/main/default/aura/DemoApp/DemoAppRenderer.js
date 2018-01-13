@@ -1,5 +1,0 @@
-({
-  aaa: function (component) {
-
-  }
-})

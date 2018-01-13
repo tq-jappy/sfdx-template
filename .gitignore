@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+.sfdx
 build/
 dist/
 *.zip
+force-app/main/default/staticresources/
+!force-app/main/default/staticresources/*-meta.xml

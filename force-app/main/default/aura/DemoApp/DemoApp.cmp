@@ -1,5 +1,0 @@
-<aura:component >
-    <ltng:require styles="{!$Resource.DemoApp + '/main.js'}" afterScriptsLoaded="{!c.scriptsLoaded}" />
-
-    <aura:attribute name="app" type="Object" />
-</aura:component>

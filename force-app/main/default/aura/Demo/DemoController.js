@@ -1,6 +1,9 @@
 ({
   scriptsLoaded: function (component, event, helper) {
     console.log("scriptsLoaded");
-    component.set("v.app", DemoApp);
+    if (DemoApp) {
+      component.set("v.app", DemoApp);
+      DemoApp.render();
+    }
   },
 })
