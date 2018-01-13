@@ -21,15 +21,15 @@ $ npm run start
 $ sfdx force:org:create -f config/project-scratch-def.json -a MyScratchOrg
 $ sfdx force:org:open -u MyScratchOrg
 $ npm run package
-# TODO: generate {basename}.resource-meta.xml
 $ sfdx force:source:push -u MyScratchOrg
 ```
-
 
 ## Resources
 
 
 ## Description of Files and Directories
 
+- force-app : sfdx source folder
+- my-app : application source folder (not dependent Salesforce)
 
 ## Issues

@@ -1,5 +1,5 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
-    <ltng:require scripts="{!$Resource.DemoApp + '/main.js'}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <ltng:require scripts="{!$Resource.MyApp + '/main.js'}" afterScriptsLoaded="{!c.scriptsLoaded}" />
 
     <aura:attribute name="app" type="Object" />
 
