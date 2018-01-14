@@ -56,8 +56,7 @@ $ sfdx force:source:push -u MyScratchOrg
 Open the application.
 
 ```
-$ sfdx force:org:open -u MyScratchOrg
-https://xxxxx.lightning.force.com/c/app.app
+$ sfdx force:org:open -u MyScratchOrg -p c/app.app
 ```
 
 ## Test
