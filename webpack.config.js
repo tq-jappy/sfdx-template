@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'build'),
-    library: [config.source.libraryPrefix, '[name]'],
+    library: config[config.source.libraryPrefix, '[name]'],
     libraryTarget: 'umd'
   },
   devtool: 'source-map',

@@ -7,10 +7,11 @@
     "node": ">= 8.0.0"
   },
   "scripts": {
-    "build": "npx webpack",
-    "package": "npx gulp staticresource",
-    "start": "npx webpack-dev-server",
-    "watch": "npx gulp watch",
+    "build": "webpack --mode production",
+    "buildDev": "webpack --mode development",
+    "package": "gulp staticresource",
+    "start": "webpack-dev-server",
+    "watch": "gulp watch",
     "test:js": "echo \"Error: no test specified\" && exit 1",
     "test:apex": "echo \"Error: no test specified\" && exit 1",
     "test:lightning": "sfdx force:lightning:test:run -a jasmineSamplesTests",
@@ -34,18 +35,19 @@
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.8",
     "gulp": "3.9.1",
-    "html-webpack-plugin": "2.30.1",
-    "webpack": "3.10.0",
-    "webpack-dev-server": "2.9.7",
-    "webpack-stream": "4.0.0"
+    "html-webpack-plugin": "github:webpack-contrib/html-webpack-plugin",
+    "style-loader": "0.19.1",
+    "url-loader": "0.6.2",
+    "webpack": "4.0.1",
+    "webpack-cli": "2.0.9",
+    "webpack-dev-server": "3.0.0",
+    "webpack-stream": "4.0.2"
   },
   "dependencies": {
-    "css-loader": "0.28.8",
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-lightning": "0.3.0",
-    "style-loader": "0.19.1",
-    "url-loader": "0.6.2"
+    "react-lightning": "0.3.0"
   }
 }
