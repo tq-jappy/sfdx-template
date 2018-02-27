@@ -6,15 +6,16 @@ const config = require('./config/config');
 const basePath = __dirname;
 
 module.exports = {
+  mode: "development",
   context: path.join(basePath, 'src'),
   entry: config.source.entry,
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'build'),
-    library: config[config.source.libraryPrefix, '[name]'],
+    library: [config.source.libraryPrefix, '[name]'],
     libraryTarget: 'umd'
   },
-  devtool: 'source-map',
+  // devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'build'),
     port: 8081

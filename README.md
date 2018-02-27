@@ -1,7 +1,7 @@
 # Modern Salesforce Development Template and Samples
 
 - Salesforce CLI/sfdx
-- webpack v3, including webpack dev server for live reloading
+- webpack v4, including webpack dev server for live reloading
 - React
 - Lightning Design System
 - [Lightning Testing Service (LTS)](https://github.com/forcedotcom/LightningTestingService) with Jasmine
