@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, render, handleEvent } from 'react-lightning-renderer';
+import { Button, render, handleEvent } from 'react-lightning';
 
 class App extends React.Component {
   constructor() {

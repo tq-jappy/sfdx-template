@@ -5,5 +5,5 @@
     <c:ReactWelcome />
 
     <h2>React Lightning Renderer</h2>
-    <c:ReactLightningRendererDemo />
+    <c:ReactLightningDemo />
 </aura:application>
