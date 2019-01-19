@@ -11,7 +11,8 @@ gulp.task('build', () =>
     .pipe(gulp.dest('build'))
 )
 
-gulp.task('staticresource', ['build'], () => {
+gulp.task('staticresource', gulp.series('build', (done) => {
   gulp.src(['build/**/*.js', 'build/**/*.js.map'])
     .pipe(gulp.dest('./force-app/main/default/staticresources/' + config.staticResourceName))
-});
+    .on('end', done);
+}));
